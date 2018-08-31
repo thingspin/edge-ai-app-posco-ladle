@@ -29,9 +29,15 @@
 
   "HideFromList": false,  
   "includes": [
-    {"type": "menu", "mainMenu": true, "menuId": 1, "img":"img/logo.dark.svg", "slug": "ladle", "name": "Ladle"},
-    {"type": "dashboard", "AddToNav": true, "menuID": 1, "ico":"fa fa-industry", "path": "dashboards/D01.0.json", "name": "Ladle Capture History"},
-    {"type": "dashboard", "AddToNav": true, "menuID": 1, "ico":"fa fa-industry", "path": "dashboards/D01.1.json", "name": "Ladle Inference History"}
+    {"type": "menu", "menuId": 0, "img":"img/cam.svg", "path":"dashboards/D01.1.json", "name": "Camera Data", "uid":"LADLE0001"},
+    {"type": "dashboard", "AddToNav": false, "path": "dashboards/D01.1.json", "uid": "LADLE0001"},
+    {"type": "menu", "menuId": 1, "img":"img/l2.svg", "path":"dashboards/D01.2.json", "name": "L2 Data", "uid":"LADLE0002"},
+    {"type": "dashboard", "AddToNav": true, "menuID":1, "path": "dashboards/D01.2.json", "uid": "LADLE0002", "name":"History - SLAB"},
+    {"type": "dashboard", "AddToNav": true, "menuID":1, "path": "dashboards/D01.2.1.json", "uid": "LADLE0005", "name":"History - ROLL"},
+    {"type": "menu", "menuId": 2, "img":"img/chip.svg", "path":"dashboards/D01.3.json", "name": "Inference Result", "uid":"LADLE0003"},
+    {"type": "dashboard", "AddToNav": false, "path": "dashboards/D01.3.json", "uid": "LADLE0003"},
+    {"type": "menu", "menuId": 3, "img":"img/data-mgr.svg", "path":"dashboards/D01.4.json", "name": "Matric Monitoring", "uid":"LADLE0004"},
+    {"type": "dashboard", "AddToNav": false, "path": "dashboards/D01.4.json", "uid": "LADLE0004"}
   ],
   "routes": [
     {
